@@ -1,0 +1,36 @@
+body {
+  font-family: avenir;
+}
+h1 {
+  color: blue
+}
+
+#title {
+  color: red
+}
+ol {
+  background-color: #ccc;
+}
+ol li {
+  color:green;
+  background-color: red;
+}
+
+ol.pretty {
+  font-family: monospace;
+}
+
+ol .ugly {
+  color: purple;
+}
+
+div.outer {
+  position: relative;
+}
+div.inner{
+  position: absolute;
+  top:100px;
+}
+div {
+  display: inline-block;
+}
