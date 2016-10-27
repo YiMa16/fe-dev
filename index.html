@@ -1,24 +1,46 @@
 <head>
-<link type="text/css" rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
-
 <body>
-	<h1 id="title">Header 1</h1>
-	<h1>Header 2</h1>
-	<ol class="pretty">
-			<li class="ugly">Item 1 </li>
-			<li>Item 2 </li>
-			<li>Item 3 </li>
-			<li>Item 4 </li>
-			<li>Item 5 </li>
-	</ol>
-	<h1 class="pretty">Header 3 </h1>
-	<div class="outer">
-			<div class="inner">div nested</div>
-	</div>
+  <div id="modal-bg" class="invisible modal" ng-app="myApp">
+    <div id="request-form">request form
+        <progress-bar progress="2" max="5"></progress-bar>
+          <select ng-model="progress">
+            <option val="0">0</option>
+            <option val="1">1</option>
+            <option val="2">2</option>
+            <option val="3">3</option>
+            <option val="4">4</option>
+            <option val="5">5</option>
+          </select>
+    </div>
+  </div>
+  <div class="toolbar">
+    <a>Events</a>
+    <a>Home</a>
+    <a>Lessons</a>
+    <a>Wellness</a>
+    <a>More</a>
+  </div>
+  <div class="content">
+    <div class="header">
+      <div class="header-left">
+        <div class="service-photo"></div>
+        <div class="service-text">
+          <div class="service-name">One Moore Photo</div>
+          <div class="service-location">Sunnyvale, CA</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="sidebox">
+          <p>Get up to five quotes from pros like. One Moore Photo within hours.</p>
+          <div id="button1" class="button">Get Quotes</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div>div1</div>
-	<div>div2</div>
-	<span>span</span>
-	<script src="app.js"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.2/angular.js"></script>
+	<script src="app.js"> </script>
 </body>
